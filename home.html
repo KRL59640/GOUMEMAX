@@ -1,0 +1,3178 @@
+<html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta property="og:title" content="GOUMEMAX">
+    <meta property="og:description" content="GOUMEMAX">
+    <meta name="viewport" content="width=device-width">  
+    <title>GOUMEMAX</title>
+  <link rel="shortcut icon" type="x-icon" href="assets/image/fav.jpg">
+  <link rel="shortcut icon" type="x-icon" href="assets/image/fav.jpg">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="assets/css/app.css">
+  <link rel="stylesheet" href="assets/css/grid.css">
+  <link rel="stylesheet" href="assets/css/bar.css">
+  <link rel="stylesheet" href="assets/css/nav.css">
+</head>
+<script type="text/javascript">
+    document.onkeydown = function (event) {
+         event = (event || window.event);
+         if (event.keyCode == 123 || event.keyCode == 18)
+         {
+               return false;
+         }
+    }
+    document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+<body>
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <a href="home.html" class="logo">
+                    <i class='bx bx-film bx-tada main-color'></i>GOUME<span class="main-color">MAX</span>
+                </a>
+                <center>
+                    <input type="text" id="searchInput" placeholder="rechercher un films..." />
+                    <button id="searchButton" aria-label="Rechercher"></button>
+                    </center>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="https://t.me/goumemix" target="_blank">TELEGRAM</a></li>
+                </ul>
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <div class="hamburger"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <center>
+        <div class="search-container">
+             <!-- Le bouton est maintenant vide -->
+            <div id="suggestions"></div>
+        </div>
+        <div id="movieGrid"></div>
+    </center>
+    <div class="hero-slide">
+        <div class="owl-carousel carousel-nav-center" id="hero-carousel">
+
+            <div class="hero-slide-item">
+                <img src="assets/images/Challenger.webp" alt="">
+                <div class="overlay"></div>
+                <div class="hero-slide-item-content">
+                    <div class="item-content-wraper">
+                        <div class="item-content-title top-down">
+                            Challenger
+                        </div>
+                        <div class="movie-infos top-down delay-2">
+                        </div>
+                        <div class="item-content-description top-down delay-4">
+                            Luka rêve d’être un grand boxeur… Malheureusement, pour l’instant, il n’est qu’amateur et doit se contenter de petits combats foireux. Mais un jour, le destin frappe à sa porte et propulse notre héros au sommet !</div>
+                            <div class="item-action top-down delay-6">
+                            <br>    
+                            <a href="comedie/Challenger.html" class="btn btn-hover">
+                                <i class="bx bxs-right-arrow"></i>
+                                <span>Regardez maintenant</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-slide-item">
+                <img src="assets/images/mufasa.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="hero-slide-item-content">
+                    <div class="item-content-wraper">
+                        <div class="item-content-title top-down">
+                            Mufasa
+                        </div>
+                        <div class="movie-infos top-down delay-2">
+                        </div>
+                        <div class="item-content-description top-down delay-4">
+                            Rafiki raconte à la jeune lionne Kiara - fille de Simba et Nala - la légende de Mufasa. Il est épaulé par Timon et Pumbaa, célèbres pour leurs répliques percutantes. Présentée sous forme de flashbacks, l'histoire de Mufasa retrace le parcours d’un lionceau orphelin, seul et désemparé, qui croise un jour la route du sympathique Taka, héritier d’une lignée royale. Cette rencontre inattendue devient le point de départ d’un voyage jalonné de péripéties pour un petit groupe « d’indésirables » formé autour d’eux, désormais en quête de son destin. Leur amitié sera mise à rude épreuve lorsqu’ils devront s’unir pour affronter un adversaire aussi menaçant que redoutable…</div>
+                            <div class="item-action top-down delay-6">
+                            <br>    
+                            <a href="aventure/Mufasa.html" class="btn btn-hover">
+                                <i class="bx bxs-right-arrow"></i>
+                                <span>Regardez maintenant</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-slide-item">
+                <img src="assets/images/lejardinier.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="hero-slide-item-content">
+                    <div class="item-content-wraper">
+                        <div class="item-content-title top-down">
+                            Le Jardinier
+                        </div>
+                        <div class="movie-infos top-down delay-2">
+                        </div>
+                        <div class="item-content-description top-down delay-4">
+                            Chaque année, le Premier ministre fait éliminer une liste de gêneurs au nom de la raison d’État. Bien malgré lui, le nom de Serge Shuster, conseiller spécial à la présidence, s’y retrouve. Lui et sa famille sont condamnés à une mort certaine. Mais ce que tout le monde ignore, c’est que les Shuster ont un nouveau jardinier, Léo, qui par le passé n’a pas cisaillé que des haies.</div>
+                            <div class="item-action top-down delay-6">
+                            <br>    
+                            <a href="comedie/LeJardinier.html" class="btn btn-hover">
+                                <i class="bx bxs-right-arrow"></i>
+                                <span>Regardez maintenant</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-slide-item">
+                <img src="assets/images/TERRIFIER.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="hero-slide-item-content">
+                    <div class="item-content-wraper">
+                        <div class="item-content-title top-down">
+                            Terrifier 3
+                        </div>
+                        <div class="movie-infos top-down delay-2">
+                        </div>
+                        <div class="item-content-description top-down delay-4">
+                            Après avoir survécu au massacre d'Halloween perpétré par Art Le Clown, Sienna et son frère tentent de reconstruire leur vie. Alors que les fêtes de fin d'année approchent, ils s'efforcent de laisser derrière eux les horreurs passées. Cependant, au moment où ils se croyaient enfin à l'abri, Art refait surface, bien décidé à transformer Noël en un véritable cauchemar.</div>
+                            <div class="item-action top-down delay-6">
+                            <br>    
+                            <a href="horreur/Terrifier3.html" class="btn btn-hover">
+                                <i class="bx bxs-right-arrow"></i>
+                                <span>Regardez maintenant</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="hero-slide-item">
+                <img src="assets/images/cordialment.jpg" alt="">
+                <div class="overlay"></div>
+                <div class="hero-slide-item-content">
+                    <div class="item-content-wraper">
+                        <div class="item-content-title top-down">
+                            Vous êtes cordialement invités
+                        </div>
+                        <div class="movie-infos top-down delay-2">
+                        </div>
+                        <div class="item-content-description top-down delay-4">
+                            Deux mariages ont été accidentellement planifiés le même week-end dans le même lieu. Les proches des deux côtés ont un défi, sauver cette journée si attendue. Le père de l'une des mariées et la sœur de la seconde vont s'affronter dans une guerre des nerfs désopilante. Ils ne reculeront devant rien pour offrir à leur mariée le moment inoubliable qu'elle mérite.</div>
+                            <div class="item-action top-down delay-6">
+                            <br>    
+                            <a href="comedie/Vousetescordialementinvites.html" class="btn btn-hover">
+                                <i class="bx bxs-right-arrow"></i>
+                                <span>Regardez maintenant</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="hero-slide-item">
+                <img src="assets/images/Vaiana .jpg" alt="">
+                <div class="overlay"></div>
+                <div class="hero-slide-item-content">
+                    <div class="item-content-wraper">
+                        <div class="item-content-title top-down">
+                            Vaiana 2
+                        </div>
+                        <div class="movie-infos top-down delay-2">
+                        </div>
+                        <div class="item-content-description top-down delay-4">
+                            Après avoir reçu une invitation inattendue de ses ancêtres, Vaiana entreprend un périple qui la conduira jusqu’aux eaux dangereuses situées aux confins des mers des îles du Pacifique. Elle y vivra des péripéties comme jamais vécues auparavant.</div>
+                            <div class="item-action top-down delay-6">
+                            <br>    
+                            <a href="animation/Vaiana2.html" class="btn btn-hover">
+                                <i class="bx bxs-right-arrow"></i>
+                                <span>Regardez maintenant</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="hero-slide-item">
+                <img src="assets/images/kamellemagicien.png" alt="">
+                <div class="overlay"></div>
+                <div class="hero-slide-item-content">
+                    <div class="item-content-wraper">
+                        <div class="item-content-title top-down">
+                            Kamel le magicien  Crois en tes rêves ! 
+                        </div>
+                        <div class="movie-infos top-down delay-2">
+                        </div>
+                        <div class="item-content-description top-down delay-4">
+                            Dans son spectacle familial, Kamel le magicien propose un voyage intimiste où il se raconte et relate son histoire en émerveillant avec de nouveaux tours de magie pour le plus grand plaisir des plus petits comme des plus grands. Rythmée de moments forts et d'émotions intenses, cette parenthèse enchantée lui permet également de réaliser son propre rêve d'enfant : voler comme Superman.</div>
+                            <div class="item-action top-down delay-6">
+                            <br>    
+                            <a href="spectacle/Kamellemagicien.html" class="btn btn-hover">
+                                <i class="bx bxs-right-arrow"></i>
+                                <span>Regardez maintenant</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    
+        
+    </div>
+      <div class="section">
+        <div class="container">
+            <div class="section-header">
+                comédie
+            </div>
+            <div class="movies-slide carousel-nav-center owl-carousel">
+
+                <a href="comedie/4Zeros.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/ePNu4AuhdisRLTxm8Hup8NUN6UJ.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            4 Zéros 
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="comedie/3Zeros.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/pXMGEoNmiYKs9wBe2fhWiQnfh7Z.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            3 Zéros 
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="comedie/Lunedemielavecmamere.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/bzW0afBIyWZ0bjCje8GPezvETy0.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Lune de miel avec ma mère 
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="comedie/atouteallure.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/lEiDGpR7EfLzOfcnoh4nwWcVsqt.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            À toute allure
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="comedie/Babybluff.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/9fQalEFwcCnnUuqrnRj0wKIrCkb.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Baby bluff
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="comedie/MavieMagueule.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/iUssfYUO82DRcnFhDIQY6abhOWf.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Ma vie Ma gueule
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="comedie/Onfaitquoimaintenant.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/h52QxUE9rmvTdIWGAHrEuKD8Z7z.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            On fait quoi maintenant ?
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="comedie/Vousetescordialementinvites.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/5hR0RRkDcrMvfyhUSypjRO0WB6Y.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Vous êtes cordialement invités
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="comedie/Nightbitch.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/h49Pie8gM2jK0UHGFRjfPB3YTd.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Nightbitch
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="comedie/Ted.html" class="movie-item">
+                    <img src="https://www.themoviedb.org/t/p/original/zdZKj5nqe3tEwuzEYbxAgMESFe7.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Ted
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="comedie/Ted2.html" class="movie-item">
+                    <img src="https://www.themoviedb.org/t/p/original/kZ9cHlWbhtPx5IoR9R1n8UHozej.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Ted 2
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="comedie/LeJardinier.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/qxqwLXgd4vjouSsxKXbGhQyjwoa.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Le Jardinier
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+            </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="container">
+            <div class="section-header">
+                AVENTURE
+            </div>
+            <div class="movies-slide carousel-nav-center owl-carousel">
+
+                <a href="aventure/Bambi.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/rJUkO3ZrLGH6K8pFTne5IiZfrvO.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Bambi, l'histoire d'une vie dans les bois
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="aventure/Mufasa.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/67BPUqGcMK4iG97JNNX4GE0sDwo.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Mufasa : Le Roi lion
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="aventure/LeRoiLion.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/7QqLsDKe3myax9mfQf5EvJ2qk6u.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Le Roi Lion 2019
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="aventure/Bookworm.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/3LfSI2GpyF1Q0WJs5bjL4jDono6.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Bookworm
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="aventure/Vegas.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/nAgpaBeMg1zbWPCMRX2jwmCo5UU.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Las Vegas Parano
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="aventure/Indien.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/aIS0iYu42Wb95ozyEiMfy906HaF.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Un Indien dans la ville
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="aventure/LargoWinch.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/9ccXmqC2J8sglLCATVsphxGbwZr.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Largo Winch : Le Prix de l'argent
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="aventure/RiddleofFire.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/xeLpipKMvcsUhMiBENNkcrqG3UX.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Riddle of Fire
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="aventure/LoupsGarous.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/zt6oRPayS9JuVhFde34tG9n3YEQ.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Loups-Garous
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="aventure/Monamilepetitmanchot.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/lLyhpfOcMSGHyLrz28ZFYd8btyu.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Mon ami le petit manchot
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+      
+      
+            </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="container">
+            <div class="section-header">
+                POLICIER
+            </div>
+            <div class="movies-slide carousel-nav-center owl-carousel">
+
+                <a href="POLICIER/Infamous.html" class="movie-item">
+                    <img src="https://www.themoviedb.org/t/p/original/q2lkJf1TAjImTHCEO7XvbqPtnPb.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Infamous 
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="POLICIER/Snatch.html" class="movie-item">
+                    <img src="https://www.themoviedb.org/t/p/original/qznSgpuBCUIk4NIEtfG2OsrxdJt.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Snatch, tu braques ou tu raques 
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="POLICIER/iNumberNumber.html" class="movie-item">
+                    <img src="https://www.themoviedb.org/t/p/original/uACOrkHLNgCsqAnk71bnSUhA3iz.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            iNumber Number  L'or de Johannesbourg
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="POLICIER/Misanthrope.html" class="movie-item">
+                    <img src="https://www.themoviedb.org/t/p/original/1r21VJFlFYa873wlq5tIblPLAGP.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Misanthrope 
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="POLICIER/CopSecret.html" class="movie-item">
+                    <img src="https://www.themoviedb.org/t/p/original/ere3KmNXEeJN8JX837jNXX1RryD.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Cop Secret 
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="POLICIER/Novembre.html" class="movie-item">
+                    <img src="https://www.themoviedb.org/t/p/original/ylr0lRmfpmTzTI7A4J7UDjuO71F.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Novembre
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+      
+            </div>
+        </div>
+      </div>
+      
+      <div class="section">
+        <div class="container">
+            <div class="section-header">
+                Action
+            </div>
+            <div class="movies-slide carousel-nav-center owl-carousel">
+
+                <a href="action/Volahautrisque.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/vWoa8QSoNwIHMBKLLv82btw2S5L.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Vol à haut risque
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="action/TheGorge.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/cG7m6fmMFykDsXXAXrlZ7IhBj4L.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            The Gorge 
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="action/DeadpoolWolverine.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/8cdWjvZQUExUUTzyp4t6EDMubfO.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Deadpool & Wolverine
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="action/Deadpool2.html" class="movie-item">
+                    <img src="https://www.themoviedb.org/t/p/original/ybjooZMNlRBaFNfs52XqONc4Xyw.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Deadpool 2
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="action/Deadpool.html" class="movie-item">
+                    <img src="https://www.themoviedb.org/t/p/original/3E53WEZJqP6aM84D8CckXx4pIHw.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Deadpool 
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="action/WarhorseOne.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/laFhAOqkWFi4sFeGPg8uun2Julw.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Warhorse One
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="action/WeekendaTaipei.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/g6QiIe8pRKpofJF6TyCXHQde7GC.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Week-end à Taipei
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="action/TheKillersGame.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/4bKlTeOUr5AKrLky8mwWvlQqyVd.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            The Killer's Game 
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="action/SniperTheLastStand.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/20lz5Ld3ulxVPQTX5p9DvD1hgk1.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Sniper  The Last Stand
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="action/Alarum.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/v313aUGmMNj6yNveaiQXysBmjVS.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Alarum 
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="action/BackinAction.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/3L3l6LsiLGHkTG4RFB2aBA6BttB.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Back in Action
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="action/HoundsofWar.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/tLdUPi2h6LGmF5foza0a5PXtQRr.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Hounds of War
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+      
+            </div>
+        </div>
+      </div>
+      
+      <div class="section">
+        <div class="container">
+            <div class="section-header">
+                FANTASTIQUE
+            </div>
+            <div class="movies-slide carousel-nav-center owl-carousel">
+
+                <a href="fantastique/Woodwalkers.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/dDIwz4xABrQoFlQAxhrxYOs621S.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Woodwalkers
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="fantastique/Gremlins2.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/rSA6Rtmoz4awKWSFCs3SrqVSuS4.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Gremlins 2   La Nouvelle Génération
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="fantastique/Gremlins.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/2j9w1uIoMSEMrfFw1yXtiD1iAuE.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Gremlins
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="fantastique/Marguerite.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/sTsfH7qMPItnB8dRSnf9vNTP9oT.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Le Maître et Marguerite
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="fantastique/OneandFour.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/2JSS2O70l2JpNiQcKD90LDPgzmQ.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            One and Four
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="fantastique/LeSeigneurdesAnneauxLaGuerredesRohirrim.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/bcDGIZKQ959tnMn0qLl6GxOkbO3.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Le Seigneur des Anneaux  La Guerre des Rohirrim
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="fantastique/LeHobbitLaBatailledescinqarmees.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/h4wjbuC61iMaCqrO3bmGQ3ibuJE.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Le Hobbit  La Bataille des cinq armées
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="fantastique/LeHobbitLaDesolationdeSmaug.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/9JPVtscMdWGmOoWxNmc1hGdkxtM.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Le Hobbit  La Désolation de Smaug
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="fantastique/LeHobbitUnvoyageinattendu.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/mdy9mG31U7jSB8edfRELv53Yfjp.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Le Hobbit  Un voyage inattendu
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="fantastique/LeSeigneurdesanneauxLeRetourduroi.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/aqiFUqswXVM58Tamux1ilnNvVRs.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Le Seigneur des anneaux  Le Retour du roi
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="fantastique/LeSeigneurdesanneauxLesDeuxTours.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/qVHBqQYLDRs7ESjP9q6o9iPHLWj.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Le Seigneur des anneaux  Les Deux Tours
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="fantastique/LeSeigneurdesanneauxLaCommunautedelanneau.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/5OPg6M0yHr21Ovs1fni2H1xpKuF.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Le Seigneur des anneaux  La Communauté de l'anneau
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="fantastique/TheMagician.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/eN9L5jqOUVO7FoFaIIZvuESO8i8.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            The Magician's Raincoat
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="fantastique/neige.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/AdwQR6uE5icVBpK6Mjc69Dhqftq.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            La soeur des neiges
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="fantastique/Door.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/49NQGuvaMWYeAD22h135tFd2Grs.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            The Portable Door
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="fantastique/HarryPotteralecoledessorciers.html" class="movie-item">
+                    <img src="https://www.themoviedb.org/t/p/original/rpFxYBmIOrUUHamhJ1A2AWRqAl1.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Harry Potter à l'école des sorciers
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="fantastique/HarryPotteretlaChambredessecrets.html" class="movie-item">
+                    <img src="https://www.themoviedb.org/t/p/original/gkX3GltfW4utYoi3mZMnsF8dWfl.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Harry Potter et la Chambre des secrets
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="fantastique/HarryPotteretlePrisonnierdAzkaban.html" class="movie-item">
+                    <img src="https://www.themoviedb.org/t/p/original/t4P2079IyK19njHDP2GwQrKdvzd.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Harry Potter et le Prisonnier d'Azkaban
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="fantastique/HarryPotteretlaCoupedefeu.html" class="movie-item">
+                    <img src="https://www.themoviedb.org/t/p/original/hBak1pn5pbI4ycAbrgMMn1YI7P1.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Harry Potter et la Coupe de feu
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="fantastique/HarryPotteretlOrdreduPhenix.html" class="movie-item">
+                    <img src="https://www.themoviedb.org/t/p/original/9ZfpCVNx0y8jpColnnfdA1HI4Zb.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Harry Potter et l'Ordre du Phénix
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="fantastique/HarryPotteretlePrincedesangmele.html" class="movie-item">
+                    <img src="https://www.themoviedb.org/t/p/original/aTO5XjSVfXdgXQ0tKVRkYyNj80E.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Harry Potter et le Prince de sang-mêlé
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="fantastique/HarryPotteretlesReliquesdelamort1emepartie.html" class="movie-item">
+                    <img src="https://www.themoviedb.org/t/p/original/yJm61MmTMjOmNXxPxdoaIkdqnOm.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Harry Potter et les Reliques de la mort  1ère partie
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="fantastique/HarryPotteretlesReliquesdelamort2emepartie.html" class="movie-item">
+                    <img src="https://www.themoviedb.org/t/p/original/alQOPmKEPHkH4BLMEla1vTNYrUr.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Harry Potter et les Reliques de la mort  2ème partie
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+      
+      
+      
+            </div>
+        </div>
+      </div>
+      
+      
+      <div class="section">
+        <div class="container">
+            <div class="section-header">
+                Horreur
+            </div>
+            <div class="movies-slide carousel-nav-center owl-carousel">
+
+                <a href="horreur/Terrifier3.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/gvYCs5EbUIB9drsuROYgZeaHAOZ.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Terrifier 3 
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="horreur/WolfMan.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/vtdEHG1j07PqLlVyhKNZRHTPKGt.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Wolf Man
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="horreur/Werewolves.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/mgMhRM3aNTxrFArPaDxWA4gxiNX.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Werewolves
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="horreur/MonsteronaPlane.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/9fBcq5WiH3z4YGjS2iVESRKxcW4.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Monster on a Plane
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="horreur/LaDamnee.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/fJbOjewxSz1v74VRzlvzKFn4TwN.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            La Damnée
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="horreur/Year10.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/zqeFM6cjHjYmgjqJExjt1NPBPdd.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Year 10
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="horreur/Cuckoo.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/mpryn3TuSPNG5ELRxyrKfblxJ9R.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Cuckoo
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+      
+            </div>
+        </div>
+      </div>
+      
+      <div class="section">
+        <div class="container">
+            <div class="section-header">
+                DRAME
+            </div>
+            <div class="movies-slide carousel-nav-center owl-carousel">
+
+                <a href="drame/Mesrine2.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/grGCEm89Mu1iSgF3e2ZGpizQCMH.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Mesrine  L'Ennemi public n°1 - Partie 2
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="drame/Mesrine.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/eG5g3zpMOmacHICjAj1OAgx9geI.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Mesrine  L'Instinct de mort - Partie 1 
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="drame/Putin.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/gViQIHITFJSwzcsDlp5ybInMVnl.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Putin [VOSTFR]
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="drame/LesFantomes.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/vPfufnBKf3AeA8lghapY8vcT2Iy.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Les Fantômes
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="drame/TheBrutalist.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/gBZpseuIAVsntmteWEnJjdtI9Yx.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            The Brutalist
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="drame/Misericorde.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/ybktthvcTszSME5PPMM8rzy2ZL9.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Miséricorde
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="drame/aContreSensLondres.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/y9ii1qorIELEshaxaLuF2MlyRv.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            À Contre-Sens : Londres
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="drame/LAmourouf.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/6akNNv4KyrguZUiG4uemfV6toVq.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            L'Amour ouf
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="drame/Souleymane.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/jUVmSuqiJ4FTBpkeJe89khym116.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            L’histoire de Souleymane
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="drame/Umami.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/hgT250M6F0o0bUUTyXjEjof6knA.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Umami
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="drame/SoundofMetal.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/g0Lx4sHdMYrj5HMfS8glU9BYRUi.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Sound of Metal
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="drame/TheApprentice.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/cq2NZ4mvsjTxVa1MQ9jK7KriHsg.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            The Apprentice 
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="drame/WishYouWereHere.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/4Oen7LeSsIWqY2jnVW8uW9Klg9Y.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Wish You Were Here
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="drame/5Septembre.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/j2lft7UvyA0FYnbf9v07dtm0CrE.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            5 Septembre
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+      
+            </div>
+        </div>
+      </div>
+      
+      <div class="section">
+        <div class="container">
+            <div class="section-header">
+                Animation
+            </div>
+            <div class="movies-slide carousel-nav-center owl-carousel">
+
+                <a href="animation/LesSimpsonPastFurious.html" class="movie-item">
+                    <img src="https://image.tmdb.org/t/p/original/mfZ2v4EKl90ISkQC7pAI1yDh1WV.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Les Simpson  Past & Furious
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="animation/DogMan.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/89wNiexZdvLQ41OQWIsQy4O6jAQ.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Dog Man 
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="animation/LeRoilion3.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/m3IAxStZiNCwRdLkk8LXLDGC6mw.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Le Roi lion 3 : Hakuna matata
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="animation/LeRoilion2.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/k3bXkFnSdEeQa5WcK1R1tfDKcDp.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Le Roi lion 2 : L'Honneur de la tribu
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="animation/LeRoilion.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/n6UChiAOSTHGih2FBactLjA4Cdt.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Le Roi lion
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="animation/Vaiana2.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/usdwoEwm68cdeMOvGFPwSk9nLTr.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Vaiana 2 
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="animation/Sonic3.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/gERwLGTa6JGN4qXjkip13eDaxy1.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Sonic 3  le film
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="animation/Croquette.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/zmvGXy0ZJirydstehP7UzmR3nys.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Croquette le chat merveilleux
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="animation/Pompo.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/fzwYH3k6h8z7mMj4UkquPaflGS0.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Pompo The Cinephile
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="animation/LesIndestructibles2.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/76esVmxYzzHcfyZFAxiWgskVhZv.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Les Indestructibles 2
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="animation/LesIndestructibles.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/1xnQ093qUPWOWZHBgw5oEUEcfTe.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Les Indestructibles
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="animation/WallaceetGromit.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/mf2LpP6YtmR8Kvl6bmQJleh8cB4.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Wallace et Gromit  La palme de la vengeance
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="animation/HAIKYU.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/vwE7e78QVIyoYxHA7FkHCdI9ugU.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            HAIKYÛ !! La Guerre des Poubelles
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+              <a href="animation/Silex.html" class="movie-item">
+                  <img src="https://media.themoviedb.org/t/p/original/slkI1pFIlkeTQIcvs0s8JuFaNE0.jpg" alt="">
+                  <div class="movie-item-content">
+                      <div class="movie-item-title">
+                          Silex and the City, le film  (15 ANS ET PLUS)
+                      </div>
+                      <div class="movie-infos">
+                          <div class="movie-info">
+                              <div class="movie-info">
+                                  <i class=""></i>
+                                  <span></span>
+                              </div>
+                              <div class="movie-info">
+                                  <span></span>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </a>
+      
+                <a href="animation/PetitPandaenAfrique.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/vJ8DcUTSwtvW0IX15faT9NXtki3.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Petit Panda en Afrique
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="DERNIERSAJOUTS/GhostCat.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/g7QIJabY49KNP9osUAWH3xMsqSI.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Ghost Cat Anzu
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="DERNIERSAJOUTS/ThatChristmas.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/uR3uhztTAxGGK7Co0yyxVy4Gc7H.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            That Christmas
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="animation/Mickey.html" class="movie-item">
+                    <img src="https://www.themoviedb.org/t/p/original/kqnsfsDMw7DrJ8tkPag7vmGv7nc.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Mickey et ses amis  des bonbons ou un sort
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="animation/Hitpig.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/bYa20LYAZ3Q7lKXtLYybo0yWWTN.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Hitpig!
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="animation/Mononoke.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/zpiuwBvPVFXc4zF0pAeHrmB49J9.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Mononoke, le film  Un fantôme sous la pluie
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="animation/Flow.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/dzDMewC0Hwv01SROiWgKOi4iOc1.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Flow, le chat qui n'avait plus peur de l'eau
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="animation/SuperWings.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/fnX7GP1GSaFuVerfX8fAHbV7Gng.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Super Wings : Vitesse maximum
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="animation/Ellian.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/fwJkILPtJSVxxvH67V7GAojisZB.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Ellian et le sortilège 
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="animation/Mysteresurlacollineauxgateaux.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/mDtQtLpgt8uI7N9C1Ej79NJm1Kl.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Mystère sur la colline aux gâteaux
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+      
+                <a href="animation/SOUTHPARKLAFINDELOBESITE.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/hpJnuHw432kcMm2nPnx4NaoQPdC.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            SOUTH PARK  LA FIN DE L'OBÉSITÉ
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="animation/GARFIELD.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/9vLxWpo0yfPnNrBvqZA30SGRW18.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            GARFIELD, HÉROS MALGRÉ LUI 
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="animation/LIMAGINAIRE.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/pQ5vSSj4FejYpWrTIeE2ahPYIoK.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            L'IMAGINAIRE
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="animation/LEGARÇONETLEHERON.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/f9EoS3lVr644WXO8YPRvBiTS1K.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            LE GARÇON ET LE HÉRON
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="animation/LEROYAUMEDESABYSSES.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/ujCbELjZkdlS2h3KqSmtobnjyyM.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            LE ROYAUME DES ABYSSES
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="animation/LEO.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/8EmJTUuZM7B3nPrcg1Ndwq45MLB.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            LÉO, LA FABULEUSE HISTOIRE DE LÉONARD DE VINCI
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="animation/ROSE.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/9Xh8LlZAQqPaZVf8UAitNKhbbq8.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            ROSE, PETITE FÉE DES FLEURS
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="animation/ULTRAMANRISING.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/hdXhPsr8hnbWsHa6XvQj6e4usz4.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            ULTRAMAN   RISING
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+      
+            </div>
+        </div>
+      </div>
+      
+      
+      
+      
+      <div class="section">
+        <div class="container">
+            <div class="section-header">
+                DOCUMENTAIRE
+            </div>
+            <div class="movies-slide carousel-nav-center owl-carousel">
+
+                <a href="documentaire/Riverboom.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/o2Qh8gbt1efpTXCwuuHDR4N4mde.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Riverboom
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="documentaire/SonsofEcstasy.html" class="movie-item">
+                    <img src="https://i.imgur.com/ve05cPL.png" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Sons of Ecstasy
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="documentaire/LeCybercasse.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/wIS7g0i09afNbHQ9VHRnP8PErTs.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Le Cyber-casse du siècle
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="documentaire/MarthaStewart.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/4WN19oCTXlK8jXC0QZgNkBpcJcw.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Martha Stewart, une icône américaine
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="documentaire/HarryPotterfeteses20ans.html" class="movie-item">
+                    <img src="https://www.themoviedb.org/t/p/original/xkohb3dtFG5S5aW61oGVqlqFhQK.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Harry Potter fête ses 20 ans  retour à Poudlard
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+      
+                <a href="documentaire/MoneyElectric.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/9L2bxBjTqbO9sxL7fGkMqN1nORI.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Money Electric  The Bitcoin Mystery
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+      
+                <a href="documentaire/GAMESTOP.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/tsgWIDZTcgQUeGVhs5RaMO2TLmO.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            GAMESTOP 
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="documentaire/JESUISCELINEDION.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/3sSOGNKXGKCcoiQxh2VzAUaWNrQ.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            JE SUIS  CÉLINE DION
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="documentaire/JRAIDORMIRCHEZVOUSSPECIALEALGERIE.html" class="movie-item">
+                    <img src="https://m.media-amazon.com/images/I/711xbLUXMDL._AC_UF1000,1000_QL80_.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            J'IRAI DORMIR CHEZ VOUS - SPÉCIALE ALGÉRIE
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="documentaire/LOSTONEVEREST.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/nI8ZnMvlVtbXZcZN55baRDbGPn3.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            LOST ON EVEREST 
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="documentaire/SENNA.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/tb7wzwMtqPCcrvFwoc2PTnZnn0z.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            SENNA
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                
+      
+      
+            </div>
+        </div>
+      </div>
+      
+      
+      <div class="section">
+        <div class="container">
+            <div class="section-header">
+                SPECTACLE
+            </div>
+            <div class="movies-slide carousel-nav-center owl-carousel">
+
+                <a href="spectacle/AhmedSylla.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/kobpDYZniBtfK4xL5GsXnvV5im2.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Ahmed Sylla  Origami
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+    
+                <a href="spectacle/Kamellemagicien.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/5pAhtoPnQ7GwpkIj9Sm55fhsqbQ.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Kamel le magicien  Crois en tes rêves !
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="spectacle/FlorenceForesti.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/rmyWQh2PtEV8QX0Du3p3K3QdbOB.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Florence Foresti  Boys Boys Boys 
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="spectacle/Dedo.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/9fHFG82at7qwwbBnnJ554uCMSN.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Dédo - Biafine 
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="spectacle/Booder.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/n6ezzH1cuMqrbdxkjuwyVEQu2lO.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Booder Is Back 
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="spectacle/Thomas.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/3JZncyvc1fHnoC2APWK00neAWS1.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Thomas VDB s'acclimate 
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="spectacle/FARYAIMEMOISITUPEUX.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/4tqOt2vNRUMLHWBm8LBfJxBTjHo.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            FARY  AIME-MOI SI TU PEUX
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="spectacle/LAURAFELPINÇAPASSE.html" class="movie-item">
+                    <img src="https://media.themoviedb.org/t/p/original/8nozrCf3Zsjg1evEdJueORZfvyN.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            LAURA FELPIN   ÇA PASSE 
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="spectacle/INESREGHORSNORMES.html" class="movie-item">
+                    <img src="https://i.imgur.com/0JFbWnr.jpeg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            INES REG  HORS NORMES
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="spectacle/REDOUANEBOUGHERABA.html" class="movie-item">
+                    <img src="https://www.themoviedb.org/t/p/original/vUiLO6IWVVB9mwlbmCUIieNMtRY.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            REDOUANE BOUGHERABA  ON M'APPELLE MARSEILLE
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="spectacle/MUSTAPHAELATRASSIQUEDUSALE.html" class="movie-item">
+                    <img src="https://www.themoviedb.org/t/p/original/zCLmkEy1TPtlxrdNtd3OBPmi4ob.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            MUSTAPHA EL ATRASSI  QUE DU SALE
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="spectacle/MUSTAPHAELATRASSIGAMEOVER.html" class="movie-item">
+                    <img src="https://www.themoviedb.org/t/p/original/yPxUlP8bHBDHw8EzIIpep1eUe9.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            MUSTAPHA EL ATRASSI  GAME OVER 
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                <a href="spectacle/MUSTAPHAELATRASSICOMMUNAUTAIRE.html" class="movie-item">
+                    <img src="https://www.themoviedb.org/t/p/original/rK4PWz2RXbSRweuhPuWH9EUdoLc.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            MUSTAPHA EL ATRASSI  COMMUNAUTAIRE
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <div class="movie-info">
+                                    <i class=""></i>
+                                    <span></span>
+                                </div>
+                                <div class="movie-info">
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+      
+                
+      
+      
+            </div>
+        </div>
+      </div>
+    
+    
+    
+    
+    
+      </div>
+    </footer>
+    <div class="copyright">
+        ©️ GOUMEMAX 2024  
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

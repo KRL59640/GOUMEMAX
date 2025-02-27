@@ -1,0 +1,77 @@
+<html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta property="og:title" content="GOUMEMAX">
+    <meta property="og:description" content="GOUMEMAX">
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/1159176138950705184/1273776914254925934/OWA__3_-removebg-preview.png?ex=66bfd8b1&is=66be8731&hm=47717f6432fe5d07503241b2a11091f1d60ca6559a6695d272ad2a8856ba74b3&">
+    <meta name="viewport" content="width=device-width">  
+    <title>GOUMEMAX</title>
+    <link rel="shortcut icon" type="x-icon" href="assets/image/fav.jpg">
+    <link rel="shortcut icon" type="x-icon" href="assets/image/fav.jpg">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/css/movie.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/bar.css">
+</head>
+    <link
+      rel="shortcut icon"
+      href="assets/image/fav.jpg"
+      type="image/x-icon"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="assets/image/fav.jpg"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/landpage.css" />
+    <link rel="stylesheet" href="assets/css/test.css" />
+  </head>
+  <body id="stop-scrolling">
+    <div class="preloader"></div>
+    <div class="text-container">
+      <div class="container-2">
+        <div class="intro-container">
+          <div class="container-2">
+            <a class="navbar-brand"  title="Home"><img  src="assets/image/logo.png" width="500" height="500" /></a>
+        </div>
+        <a href="home.html" class="button" onclick="myFunction()">ENTRER SUR GOUMEMAX</a>
+      </div>
+      <div class="bottom-text-container1">
+      </div>
+    </div>
+    </div>
+    <script src="assets/js/Loader.js"></script>
+    <script>
+      function myFunction() {
+        location.replace("home.html");
+      }
+    </script>
+
+    <script>
+      function preloaderFadeOutInit() {
+        $(".preloader").fadeOut("slow"); // will first fade out the loading animation
+        $("body").attr("id", ""); 
+      }
+      // Window load function
+      jQuery(window).on("load", function () {
+        // makes sure the whole site is loaded
+        (function ($) {
+          preloaderFadeOutInit();
+        })(jQuery);
+      });
+    </script>
+  </body>
+</html>
