@@ -1,0 +1,73 @@
+html,
+body {
+	position: relative;
+	height: 100%;
+}
+
+body {
+	background-color: #0e0e0e;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #000;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 800px;
+	height: 400px;
+	padding: 50px;
+	margin: 0 auto;
+}
+
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	font-size: 18px;
+	background: #0e0e0e;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.swiper-slide img {
+	display: block;
+	height: 350px;
+	object-fit: contain;
+	right: -80px;
+	position: relative;
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
+}
+.swiper-slide-active img {
+	right: -20px;
+	opacity: 1;
+}
+.swiper-slide .details {
+	width: 40%;
+	left: -80px;
+	position: relative;
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
+}
+.swiper-slide-active .details {
+	left: -30px;
+	opacity: 1;
+}
+.swiper-slide .details * {
+	color: #fff;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+	color: #6e6e6e;
+}
+.swiper-pagination-progressbar {
+	top: 98%;
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+	background-color: #6e6e6e;
+}
