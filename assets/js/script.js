@@ -147,6 +147,10 @@ document.addEventListener("DOMContentLoaded", function () {
         { title: " Putin  ", url: "drame/Putin.html", image: "https://media.themoviedb.org/t/p/original/gViQIHITFJSwzcsDlp5ybInMVnl.jpg" },
         { title: " Mesrine  L'Instinct de mort - Partie 1   ", url: "drame/Mesrine.html", image: "https://media.themoviedb.org/t/p/original/eG5g3zpMOmacHICjAj1OAgx9geI.jpg" },
         { title: " Mesrine  L'Ennemi public n°1 - Partie 2 ", url: "drame/Mesrine2.html", image: "https://media.themoviedb.org/t/p/original/grGCEm89Mu1iSgF3e2ZGpizQCMH.jpg" },
+        { title: " Barbès, little Algérie ", url: "comedie/BarbeslittleAlgeie.html", image: "https://media.themoviedb.org/t/p/original/61g2EHKddDNI9r1FTYaKTXxZBTU.jpg" },
+        { title: " La guerre des Mafias ", url: "action/LaguerredesMafias.html", image: "https://media.themoviedb.org/t/p/original/1siNqjRQ5OeJl6tQH8274WnMZ7p.jpg" },
+        { title: " Demon City Oni Goroshi  ", url: "action/DemonCityOniGoroshi.html", image: "https://media.themoviedb.org/t/p/original/j9eIbTY7Gi057SSMiejAykqDIQT.jpg" },
+        { title: " Vallée des ombres  ", url: "aventure/Valleedesombres.html", image: "https://media.themoviedb.org/t/p/original/hd9bxPdYHEjvgqE9USXvAMzyukX.jpg" },
         // Autres films ici...
     ];
 
