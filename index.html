@@ -1,77 +1,402 @@
-<html>
-<html lang="fr">
-<head>
-    <meta charset="utf-8">
-    <meta property="og:title" content="GOUMEMAX">
-    <meta property="og:description" content="GOUMEMAX">
-    <meta property="og:image" content="https://cdn.discordapp.com/attachments/1159176138950705184/1273776914254925934/OWA__3_-removebg-preview.png?ex=66bfd8b1&is=66be8731&hm=47717f6432fe5d07503241b2a11091f1d60ca6559a6695d272ad2a8856ba74b3&">
-    <meta name="viewport" content="width=device-width">  
-    <title>GOUMEMAX</title>
-    <link rel="shortcut icon" type="x-icon" href="assets/image/fav.jpg">
-    <link rel="shortcut icon" type="x-icon" href="assets/image/fav.jpg">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="assets/css/movie.css">
-    <link rel="stylesheet" href="assets/css/grid.css">
-    <link rel="stylesheet" href="assets/css/app.css">
-    <link rel="stylesheet" href="assets/css/bar.css">
-</head>
-    <link
-      rel="shortcut icon"
-      href="assets/image/fav.jpg"
-      type="image/x-icon"
-    />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="assets/image/fav.jpg"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/landpage.css" />
-    <link rel="stylesheet" href="assets/css/test.css" />
-  </head>
-  <body id="stop-scrolling">
-    <div class="preloader"></div>
-    <div class="text-container">
-      <div class="container-2">
-        <div class="intro-container">
-          <div class="container-2">
-            <a class="navbar-brand"  title="Home"><img  src="assets/image/logo.png" width="500" height="500" /></a>
-        </div>
-        <a href="home.html" class="button" onclick="myFunction()">ENTRER SUR GOUMEMAX</a>
-      </div>
-      <div class="bottom-text-container1">
-      </div>
-    </div>
-    </div>
-    <script src="assets/js/Loader.js"></script>
-    <script>
-      function myFunction() {
-        location.replace("home.html");
-      }
-    </script>
 
-    <script>
-      function preloaderFadeOutInit() {
-        $(".preloader").fadeOut("slow"); // will first fade out the loading animation
-        $("body").attr("id", ""); 
-      }
-      // Window load function
-      jQuery(window).on("load", function () {
-        // makes sure the whole site is loaded
-        (function ($) {
-          preloaderFadeOutInit();
-        })(jQuery);
-      });
-    </script>
-  </body>
-</html>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<title>goumemax change de nom et devient goumemix.com</title>
+<meta name="title" content="okrami change de nom et devient sodirm.com">
+<meta name="description" content="goumemix a changer de nom, il devient dorénavant goumemix.com">
+
+
+
+<style>
+
+body {
+
+margin:0px
+
+}
+
+.messfoot {
+
+	padding: 12px;
+    margin-top: 20px;
+    background: #3b3e23;
+    color: #eee210;
+    font-size: 17px;
+    font-style: inherit;
+
+}
+
+.column3 {
+    width: 100%;
+}
+
+.conteneur_progess_bar{
+width: 200px;
+height: 41px;
+	background-color:#f7f7f7;
+	border:1px solid #e7e7e7;
+	display:inline-block;
+	border-radius: 2px;
+}
+
+.progress_bar{
+	background-color:#ff585b;
+	width:92%;
+height: 37px;
+	border:2px solid #f7f7f7;
+	border-radius: 2px;
+	
+}
+
+.pourcent{
+	color:black;
+	font-weight:500;
+	font-size:20px;
+	margin-left:10px;
+	font-size:14px;
+	border-radius: 2px;
+}
+
+
+.bottomdiv
+{
+position: absolute;
+top: 0px;
+width :100%; height:100%;
+z-index : 9999999999999;
+
+
+POSITION: fixed;
+bottom: 0;
+}
+.hide {
+  display: none;
+}
+
+.deskop {
+
+position:relative; top:100px; display:block
+
+}
+
+.mobile {
+
+position:relative; top:50px; display:none
+
+}
+
+
+@media screen and (max-width: 745px) {
+
+
+.deskop {
+
+display:none
+
+}
+
+.mobile {
+
+display:block
+
+}
+
+}
+
+
+
+
+
+.content .columnEnglobe1 {
+
+position: absolute;
+border-radius: 5px;
+top: 50%;
+left: 20px;
+right: 20px;
+background: #2b2b2b;
+color: black;
+padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+padding-top: 8px;
+transform: translateY(-50%);
+width: 500px;
+margin: auto;
+padding-top: 20px;
+padding-bottom: 23px;
+font-size: 20px;
+font-family: 'Vollkorn', serif;
+
+}
+
+
+
+.lefto {
+
+display:flex;
+
+
+}
+
+
+.resultat  {
+
+display:inline-block;
+font-size: 14px;
+margin-top: 6px;
+
+}
+
+
+.bouton {
+
+flex:1
+
+
+}
+
+.bouton1 {
+
+border: 2px solid black;
+padding: 9px;
+    padding-bottom: 9px;
+padding-bottom: 1px;
+cursor: pointer;
+background-color: #10c2ee;
+font-size: 47px;
+color:black;
+
+}
+
+.bouton1:hover {
+
+background-color:#3b3e23;
+border: 2px solid #10c2ee;
+color:#10c2ee;
+
+
+}
+
+.barredeprogression {
+
+flex:1;
+display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+
+
+
+
+.footer1 {
+
+
+text-align: center;
+margin-top: 27px;
+background: linear-gradient(to left, #f0f0f0, white);
+padding: 12px;
+border-radius: 3px;
+font-size: 13px;
+
+}
+
+.footer2 {
+
+display: inline-block;
+margin-top: 18px;
+margin-top: 18px;
+border: 1px dotted #0080008f;
+padding: 5px;
+    padding-top: 5px;
+padding-top: 7px;
+border-radius: 4px;
+color: #025502a3;
+background: #f7faf6;
+
+}
+
+.top {
+display: inline-block;
+margin-bottom: 11px;
+padding: 26px;
+border-radius: 1px;
+width: 446px;
+font-style: italic;
+color: white;
+background: linear-gradient(to right, #0000005c, #fff0);
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+
+.content .columnEnglobe1 {
+width:unset;
+}
+
+.lefto {
+
+display:inline
+
+}
+
+.top {
+font-size:14px;
+padding:10px;
+margin-bottom:0px;
+width: 100%;
+font-style: italic;
+color: white;
+
+}
+
+.bouton {
+
+margin-top: 12px;
+
+}
+
+.footer1 {
+
+margin-top: 19px;
+padding: 8px;
+font-size: 11px;
+
+}
+
+.footer2 {
+
+font-size: 12px;
+
+}
+
+
+.conteneur_progess_bar {
+    width: 172px;
+    height: 31px;
+}
+	
+.progress_bar {
+
+    height: 27px;
+	
+	}
+	
+.resultat {
+
+font-size: 12px;
+margin-top: 3px;
+
+}
+
+
+.pourcent{
+
+	font-size:12px;
+	
+	}
+
+
+	.bouton1 {
+
+
+font-size: 32px;
+
+
+}
+
+.messfoot {
+
+
+font-size: 14px;
+
+
+}
+
+}
+
+
+</style>
+
+
+
+
+</head><body><div class="bottomdiv" id="footer">
+
+
+<div style="position:absolute; background-color:#1e1e1e; width :100%; height:100%;   opacity: 1; z-index: 99999999;">
+
+</div>
+
+
+
+
+
+<div class="content">
+
+
+
+
+<div class="columnEnglobe1" style="z-index:99999999">
+
+
+
+
+
+
+
+<div class="column3">
+
+
+
+<div class="top">
+
+<center>
+  GOUMEMAX CHANGE DE NOM ET DEVIENT
+</center>
+
+</div>
+
+
+
+
+<div class="lefto">
+
+
+
+<a href="https://goumemix.com/" style="text-decoration: none;
+color: black;
+width: 100%;">
+<div class="bouton">
+<center>
+<div class="bouton1">
+GOUMEMIX.COM</div>
+<center>
+
+</center></center></div>
+</a>
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+</div>
+</div>
